@@ -4449,14 +4449,10 @@ sub, sup {
     background: #1a1a2c;
     display: flex;
     vertical-align: bottom;
-    min-height: 50vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
-}
-
-#particles-js .particles-js-canvas-el {
-    height: 50vh !important
 }
 
 .header {
@@ -4465,11 +4461,20 @@ sub, sup {
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (height > 500px) {
+    .header {
+        top: 20%;
+    }
+    #particles-js {
+        min-height: 50vh;
+    }
 }
 
 .header .site-title {
