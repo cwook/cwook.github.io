@@ -4593,6 +4593,8 @@ sub, sup {
 
 
 .grid-container {
+    align-items: center;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
     padding: 15px;
@@ -4600,6 +4602,8 @@ sub, sup {
 
 @media only screen and (768px < width <= 1030px) {
     .grid-container {
+        align-items: center;
+        width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 10px;
@@ -4608,6 +4612,8 @@ sub, sup {
 
 @media only screen and (min-width: 768px) {
     .grid-container {
+        align-items: center;
+        width: 100%;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 5px;
@@ -4620,4 +4626,71 @@ sub, sup {
 }
 
 #about {
-    font-size:120%;width:90%;margin:0 auto;max-width:960px}@media only screen and (min-width:768px){#about{width:80%}}  #about svg{width:60px!important;height:auto}  .tech{margin:10px;flex:1 1 0}  .tech h2,.tech h3,.user-details h1,body{font-weight:400}  .user{text-align:center;font-size:60px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between}  .user p{font-size:16px}@media only screen and (min-width:768px){.user{flex-wrap:nowrap;font-size:75px}}  .user-details{text-align:center;margin:5px auto}  .footer{background: #1a1a2c;padding:10px 0;margin-top:100px;text-align:center;color:#fff}  .footer .love{color:red}  .footer a{text-decoration:none;margin:0;color:#fff}
+    font-size: 120%;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px
+}
+
+@media only screen and (min-width: 768px) {
+    #about {
+        width: 80%
+    }
+}
+
+#about svg {
+    width: 60px !important;
+    height: auto
+}
+
+.tech {
+    margin: 10px;
+    flex: 1 1 0
+}
+
+.tech h2, .tech h3, .user-details h1, body {
+    font-weight: 400
+}
+
+.user {
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.user p {
+    font-size: 16px
+}
+
+@media only screen and (min-width: 768px) {
+    .user {
+        flex-wrap: nowrap;
+        font-size: 75px
+    }
+}
+
+.user-details {
+    text-align: center;
+    margin: 5px auto
+}
+
+.footer {
+    background: #1a1a2c;
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff
+}
+
+.footer .love {
+    color: red
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0;
+    color: #fff
+}
