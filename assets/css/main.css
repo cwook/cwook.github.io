@@ -4593,30 +4593,33 @@ sub, sup {
 
 
 .grid-container {
-    align-items: center;
+    align-content: center;
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    padding: 15px;
+    padding: 5px;
 }
 
-@media only screen and (768px < width <= 1030px) {
+@media only screen and (768px < width < 1100px) {
     .grid-container {
-        align-items: center;
+        align-content: center;
         width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
-        padding: 10px;
+        padding: 15px;
     }
 }
 
-@media only screen and (768px < width) {
+@media only screen and (1100px <= width) {
     .grid-container {
-        align-items: center;
-        width: 80%;
+        align-content: center;
+        width: 90%;
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        padding: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
@@ -4653,6 +4656,7 @@ sub, sup {
 }
 
 .user {
+    align: center;
     text-align: center;
     font-size: 60px;
     display: flex;
@@ -4667,7 +4671,6 @@ sub, sup {
 
 @media only screen and (min-width: 768px) {
     .user {
-        flex-wrap: nowrap;
         font-size: 75px
     }
 }
