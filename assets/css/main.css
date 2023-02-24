@@ -4604,7 +4604,6 @@ sub, sup {
         grid-template-columns: 50% 50%;
         padding: 10px;
     }
-}
 
 @media only screen and (min-width: 768px) {
     .grid-container {
@@ -4612,6 +4611,7 @@ sub, sup {
         grid-template-columns: 33% 33% 33%;
         padding: 5px;
     }
+}
 }
 
 .grid-item {
