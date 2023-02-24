@@ -4610,10 +4610,10 @@ sub, sup {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (768px < width) {
     .grid-container {
         align-items: center;
-        width: 100%;
+        width: 80%;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 5px;
