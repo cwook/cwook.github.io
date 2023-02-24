@@ -4598,17 +4598,24 @@ sub, sup {
     padding: 15px;
 }
 
+@media only screen and (min-width: 1030px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .grid-container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        padding: 15px;
+        padding: 5px;
     }
 }
 
 .grid-item {
-    padding: 15px;
-    font-size: 30px;
+    padding: 10px;
     text-align: center;
 }
 
