@@ -4632,6 +4632,11 @@ sub, sup {
 .grid-item {
     padding: 10px;
     text-align: center;
+    transition: transform .35s;
+}
+
+.grid-item:hover {
+    transform: scale(1.2);
 }
 
 #about {
