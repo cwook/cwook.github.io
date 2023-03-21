@@ -4449,7 +4449,7 @@ sub, sup {
     background: #1a1a2c;
     display: flex;
     vertical-align: bottom;
-    min-height: 100vh;
+    min-height: 100lvh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
@@ -4461,16 +4461,17 @@ sub, sup {
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 40%;
     left: 50%;
+    top: 50vh;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    align-self: center;
 }
 
-@media only screen and (height > 500px) {
+@media only screen and (aspect-ratio > 0.5) {
     .header {
-        top: 20%;
+        top: 20vh;
     }
     #particles-js {
         min-height: 50vh;
@@ -4702,3 +4703,4 @@ sub, sup {
     margin: 0;
     color: #fff
 }
+
